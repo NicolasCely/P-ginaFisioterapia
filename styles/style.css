@@ -14,11 +14,15 @@ header li {
     list-style: none;
 }
 
+ul li:hover {
+    background-color: #35a19e;
+}
+
 main {
     background-image: linear-gradient(#c9f0ef, #78bce4);
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -39,24 +43,30 @@ footer {
     }
 
     .imagenUno {
-        width: 320px;
-        height: 300px;
+        width: 280px;
+        height: 260px;
         justify-self: center;
     }
 
     .imagenDos {
-        width: 320px;
-        height: 300px;
+        width: 280px;
+        height: 260px;
         justify-self: center;
     }
 
 }
-    
+
+    @media screen and (max-width: 830px) {
+        #comentarios {
+            width: 260px;
+        }
+    }
 
 
 
 
-/* #grilla {
+
+    /* #grilla {
     background-image: linear-gradient(#c9f0ef, #78bce4);
     display: grid;
     grid-template-areas:
