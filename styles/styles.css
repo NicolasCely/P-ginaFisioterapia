@@ -1,0 +1,30 @@
+header {
+  background-image: linear-gradient(#93c3c5, #a9e1e9);
+}
+header h1 {
+  font-family: "Smooch", cursive;
+  color: rgb(55, 115, 150);
+}
+header li {
+  display: inline;
+  list-style: none;
+  border-radius: 5px;
+}
+header li:hover {
+  background-color: aliceblue;
+}
+
+main {
+  background-image: linear-gradient(#c9f0ef, #78bce4);
+}
+main .card {
+  background-image: linear-gradient(#c9f0ef, #78bce4);
+  border: #c9f0ef;
+}
+
+footer {
+  background-image: linear-gradient(#93c3c5, #a9e1e9);
+  height: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
