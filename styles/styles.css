@@ -65,6 +65,10 @@ footer {
   #comentarios {
     width: 260px;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -41,14 +41,20 @@ main {
         border: #c9f0ef;       
  }}
 
-footer {
+ footer {
     padding: 5px;
     background-image: map-get($map, fondoUno);
     display: flex;
 }
 
 @media screen and (max-width: 830px) {
+
     #comentarios {
         width: 260px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
     }
 }
