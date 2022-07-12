@@ -1,3 +1,36 @@
+.instamgram {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(148, 148, 226);
+  border: 1px solid rgb(50, 50, 119);
+  color: rgb(136, 41, 41);
+}
+
+.facebook {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(148, 148, 226);
+  border: 1px solid rgb(50, 50, 119);
+  color: rgb(50, 50, 119);
+}
+
+.idForm, .servicioForm {
+  padding: 5px;
+  text-align: left;
+}
+
+.servicioForm {
+  color: rgb(50, 50, 119);
+}
+
 header {
   background-image: linear-gradient(#93c3c5, #a9e1e9);
 }
@@ -6,12 +39,12 @@ header h1 {
   color: rgb(55, 115, 150);
 }
 header li {
+  border-radius: 5px;
   display: inline;
   list-style: none;
-  border-radius: 5px;
 }
 header li:hover {
-  background-color: aliceblue;
+  background-color: #60a9ca;
 }
 
 main {
@@ -23,8 +56,15 @@ main .card {
 }
 
 footer {
+  padding: 5px;
   background-image: linear-gradient(#93c3c5, #a9e1e9);
-  height: 40px;
+  display: flex;
+}
+
+@media screen and (max-width: 830px) {
+  #comentarios {
+    width: 260px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

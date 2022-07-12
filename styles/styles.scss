@@ -1,31 +1,54 @@
-$background: linear-gradient(#93c3c5, #a9e1e9);
-$background2: linear-gradient(#c9f0ef, #78bce4);
+@import "./maps";
+@import "./mixin";
+
+.instamgram {
+    @include btnfooter(200px, 30px, rgb(148, 148, 226), rgb(50, 50, 119), rgb(136, 41, 41))
+}
+
+.facebook {
+    @include btnfooter(200px, 30px, rgb(148, 148, 226), rgb(50, 50, 119), rgb(50, 50, 119))
+}
+
+.idForm {
+    padding: 5px;
+    text-align: left
+}
+
+.servicioForm {
+    @extend .idForm;
+    color: rgb(50, 50, 119);
+}
 
 header {
-    background-image: linear-gradient(#93c3c5, #a9e1e9);
-
+    background-image: map-get($map, fondoUno);
     h1 {
         font-family: 'Smooch', cursive;
         color: rgb(55, 115, 150);
     }
 
     li {
+        border-radius: map-get($map, radio);
         display: inline;
         list-style: none;
-        border-radius: 5px;
-        &:hover {background-color: aliceblue;}
-        }
+        &:hover {background-color: #60a9ca}
     }
+}
 
 main {
-        background-image: linear-gradient(#c9f0ef, #78bce4);
+        background-image: map-get($map, fondoDos);
     .card {
-        background-image: $background2;
-        border: #c9f0ef;
-    }
-    }
+        background-image: map-get($map, fondoDos);
+        border: #c9f0ef;       
+ }}
 
 footer {
-    background-image: $background;
-    height: 40px;
+    padding: 5px;
+    background-image: map-get($map, fondoUno);
+    display: flex;
+}
+
+@media screen and (max-width: 830px) {
+    #comentarios {
+        width: 260px;
+    }
 }
