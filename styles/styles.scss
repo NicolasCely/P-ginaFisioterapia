@@ -36,10 +36,19 @@ header {
 
 main {
         background-image: map-get($map, fondoDos);
+
     .card {
         background-image: map-get($map, fondoDos);
-        border: #c9f0ef;       
- }}
+        border: #c9f0ef;    
+}
+
+ .cardCarousel {
+    background-image: map-get($map, fondoDos);
+    border: #c9f0ef;
+    opacity: 0.7;
+    padding: 5px;
+    border-radius: 5px;       
+}}
 
  footer {
     padding: 5px;
